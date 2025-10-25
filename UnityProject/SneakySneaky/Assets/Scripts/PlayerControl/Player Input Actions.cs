@@ -1,0 +1,484 @@
+// GENERATED AUTOMATICALLY FROM 'Assets/Jojo/Player Input Actions.inputactions'
+
+using System;
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine.InputSystem;
+using UnityEngine.InputSystem.Utilities;
+
+public class @PlayerInputActions : IInputActionCollection, IDisposable
+{
+    public InputActionAsset asset { get; }
+    public @PlayerInputActions()
+    {
+        asset = InputActionAsset.FromJson(@"{
+    ""name"": ""Player Input Actions"",
+    ""maps"": [
+        {
+            ""name"": ""Mouse"",
+            ""id"": ""756ca5be-d9f3-423b-bca5-6b3eccd5e805"",
+            ""actions"": [
+                {
+                    ""name"": ""Jump"",
+                    ""type"": ""Button"",
+                    ""id"": ""a3ef1235-be95-4323-9152-5614bc3e9954"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """"
+                },
+                {
+                    ""name"": ""Move"",
+                    ""type"": ""Value"",
+                    ""id"": ""e1460305-eb8f-48bf-8c5a-3be32bdbcd90"",
+                    ""expectedControlType"": ""Vector2"",
+                    ""processors"": """",
+                    ""interactions"": """"
+                },
+                {
+                    ""name"": ""Sneak"",
+                    ""type"": ""Button"",
+                    ""id"": ""38174383-2b7c-483a-be79-4a28490cd0b0"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """"
+                },
+                {
+                    ""name"": ""Sprint"",
+                    ""type"": ""Button"",
+                    ""id"": ""cc727eb3-77c6-4aff-bb86-82cc292a0ff5"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """"
+                },
+                {
+                    ""name"": ""MouseX"",
+                    ""type"": ""PassThrough"",
+                    ""id"": ""77f45e58-e6cc-425e-b321-73f817a2298f"",
+                    ""expectedControlType"": ""Axis"",
+                    ""processors"": """",
+                    ""interactions"": """"
+                },
+                {
+                    ""name"": ""MouseY"",
+                    ""type"": ""PassThrough"",
+                    ""id"": ""4676fd13-992d-4cec-bd06-f87d50224a4b"",
+                    ""expectedControlType"": ""Axis"",
+                    ""processors"": """",
+                    ""interactions"": """"
+                },
+                {
+                    ""name"": ""Interaction"",
+                    ""type"": ""Button"",
+                    ""id"": ""d3ddaaa1-260b-4c3f-88f4-50d452953a18"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """"
+                }
+            ],
+            ""bindings"": [
+                {
+                    ""name"": """",
+                    ""id"": ""89124f21-a18c-4c4d-8e0d-a15dd2c2a6ae"",
+                    ""path"": ""<Keyboard>/space"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Jump"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": ""2D Vector"",
+                    ""id"": ""03f40865-d517-4c2c-8a4c-f705a315274d"",
+                    ""path"": ""2DVector"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Move"",
+                    ""isComposite"": true,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": ""up"",
+                    ""id"": ""fa2f546a-abf8-47c8-8d35-28cddb2fcb07"",
+                    ""path"": ""<Keyboard>/w"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Move"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": true
+                },
+                {
+                    ""name"": ""down"",
+                    ""id"": ""01ecd0ca-a4cb-4e0c-9493-c4561775241c"",
+                    ""path"": ""<Keyboard>/s"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Move"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": true
+                },
+                {
+                    ""name"": ""left"",
+                    ""id"": ""ae2f7840-a26d-42a9-ac1f-3feada7faa69"",
+                    ""path"": ""<Keyboard>/a"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Move"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": true
+                },
+                {
+                    ""name"": ""right"",
+                    ""id"": ""0c2b9e73-f2d7-4f53-b266-a7e9c498132e"",
+                    ""path"": ""<Keyboard>/d"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Move"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": true
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""87010419-88bb-429e-97f3-de236df2b0d4"",
+                    ""path"": ""<Keyboard>/leftCtrl"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Sneak"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""76738202-0070-4f32-b7d3-c3659b3310f3"",
+                    ""path"": ""<Keyboard>/leftShift"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Sprint"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""badcd1d7-5a87-486a-ac12-5b01a090118b"",
+                    ""path"": ""<Mouse>/delta/x"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""MouseX"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""49eafbfb-a3b4-4baa-b75a-39867445459b"",
+                    ""path"": ""<Mouse>/delta/y"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""MouseY"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""a558e287-436a-48c7-967c-7f2c7a4b45ba"",
+                    ""path"": ""<Keyboard>/f"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Interaction"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                }
+            ]
+        },
+        {
+            ""name"": ""Menu"",
+            ""id"": ""e6206b79-3298-442c-839d-5442cfb019bc"",
+            ""actions"": [
+                {
+                    ""name"": ""ToggleMenu"",
+                    ""type"": ""Button"",
+                    ""id"": ""2f8e49f3-3e9e-4c12-90ff-43a680a8ae8c"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """"
+                }
+            ],
+            ""bindings"": [
+                {
+                    ""name"": """",
+                    ""id"": ""520a68c8-4a7f-47b4-bfec-fe34fefd61b3"",
+                    ""path"": ""<Keyboard>/x"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""ToggleMenu"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                }
+            ]
+        },
+        {
+            ""name"": ""TextBox"",
+            ""id"": ""23480bc1-c017-456c-a352-2d56d23919ed"",
+            ""actions"": [
+                {
+                    ""name"": ""Continue"",
+                    ""type"": ""Button"",
+                    ""id"": ""1d4f06ad-8cf7-4a1d-9166-e34bcb437940"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """"
+                }
+            ],
+            ""bindings"": [
+                {
+                    ""name"": """",
+                    ""id"": ""3a7d90c8-5c31-4fdd-9509-ddff48919b6c"",
+                    ""path"": ""<Mouse>/leftButton"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Continue"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                }
+            ]
+        }
+    ],
+    ""controlSchemes"": []
+}");
+        // Mouse
+        m_Mouse = asset.FindActionMap("Mouse", throwIfNotFound: true);
+        m_Mouse_Jump = m_Mouse.FindAction("Jump", throwIfNotFound: true);
+        m_Mouse_Move = m_Mouse.FindAction("Move", throwIfNotFound: true);
+        m_Mouse_Sneak = m_Mouse.FindAction("Sneak", throwIfNotFound: true);
+        m_Mouse_Sprint = m_Mouse.FindAction("Sprint", throwIfNotFound: true);
+        m_Mouse_MouseX = m_Mouse.FindAction("MouseX", throwIfNotFound: true);
+        m_Mouse_MouseY = m_Mouse.FindAction("MouseY", throwIfNotFound: true);
+        m_Mouse_Interaction = m_Mouse.FindAction("Interaction", throwIfNotFound: true);
+        // Menu
+        m_Menu = asset.FindActionMap("Menu", throwIfNotFound: true);
+        m_Menu_ToggleMenu = m_Menu.FindAction("ToggleMenu", throwIfNotFound: true);
+        // TextBox
+        m_TextBox = asset.FindActionMap("TextBox", throwIfNotFound: true);
+        m_TextBox_Continue = m_TextBox.FindAction("Continue", throwIfNotFound: true);
+    }
+
+    public void Dispose()
+    {
+        UnityEngine.Object.Destroy(asset);
+    }
+
+    public InputBinding? bindingMask
+    {
+        get => asset.bindingMask;
+        set => asset.bindingMask = value;
+    }
+
+    public ReadOnlyArray<InputDevice>? devices
+    {
+        get => asset.devices;
+        set => asset.devices = value;
+    }
+
+    public ReadOnlyArray<InputControlScheme> controlSchemes => asset.controlSchemes;
+
+    public bool Contains(InputAction action)
+    {
+        return asset.Contains(action);
+    }
+
+    public IEnumerator<InputAction> GetEnumerator()
+    {
+        return asset.GetEnumerator();
+    }
+
+    IEnumerator IEnumerable.GetEnumerator()
+    {
+        return GetEnumerator();
+    }
+
+    public void Enable()
+    {
+        asset.Enable();
+    }
+
+    public void Disable()
+    {
+        asset.Disable();
+    }
+
+    // Mouse
+    private readonly InputActionMap m_Mouse;
+    private IMouseActions m_MouseActionsCallbackInterface;
+    private readonly InputAction m_Mouse_Jump;
+    private readonly InputAction m_Mouse_Move;
+    private readonly InputAction m_Mouse_Sneak;
+    private readonly InputAction m_Mouse_Sprint;
+    private readonly InputAction m_Mouse_MouseX;
+    private readonly InputAction m_Mouse_MouseY;
+    private readonly InputAction m_Mouse_Interaction;
+    public struct MouseActions
+    {
+        private @PlayerInputActions m_Wrapper;
+        public MouseActions(@PlayerInputActions wrapper) { m_Wrapper = wrapper; }
+        public InputAction @Jump => m_Wrapper.m_Mouse_Jump;
+        public InputAction @Move => m_Wrapper.m_Mouse_Move;
+        public InputAction @Sneak => m_Wrapper.m_Mouse_Sneak;
+        public InputAction @Sprint => m_Wrapper.m_Mouse_Sprint;
+        public InputAction @MouseX => m_Wrapper.m_Mouse_MouseX;
+        public InputAction @MouseY => m_Wrapper.m_Mouse_MouseY;
+        public InputAction @Interaction => m_Wrapper.m_Mouse_Interaction;
+        public InputActionMap Get() { return m_Wrapper.m_Mouse; }
+        public void Enable() { Get().Enable(); }
+        public void Disable() { Get().Disable(); }
+        public bool enabled => Get().enabled;
+        public static implicit operator InputActionMap(MouseActions set) { return set.Get(); }
+        public void SetCallbacks(IMouseActions instance)
+        {
+            if (m_Wrapper.m_MouseActionsCallbackInterface != null)
+            {
+                @Jump.started -= m_Wrapper.m_MouseActionsCallbackInterface.OnJump;
+                @Jump.performed -= m_Wrapper.m_MouseActionsCallbackInterface.OnJump;
+                @Jump.canceled -= m_Wrapper.m_MouseActionsCallbackInterface.OnJump;
+                @Move.started -= m_Wrapper.m_MouseActionsCallbackInterface.OnMove;
+                @Move.performed -= m_Wrapper.m_MouseActionsCallbackInterface.OnMove;
+                @Move.canceled -= m_Wrapper.m_MouseActionsCallbackInterface.OnMove;
+                @Sneak.started -= m_Wrapper.m_MouseActionsCallbackInterface.OnSneak;
+                @Sneak.performed -= m_Wrapper.m_MouseActionsCallbackInterface.OnSneak;
+                @Sneak.canceled -= m_Wrapper.m_MouseActionsCallbackInterface.OnSneak;
+                @Sprint.started -= m_Wrapper.m_MouseActionsCallbackInterface.OnSprint;
+                @Sprint.performed -= m_Wrapper.m_MouseActionsCallbackInterface.OnSprint;
+                @Sprint.canceled -= m_Wrapper.m_MouseActionsCallbackInterface.OnSprint;
+                @MouseX.started -= m_Wrapper.m_MouseActionsCallbackInterface.OnMouseX;
+                @MouseX.performed -= m_Wrapper.m_MouseActionsCallbackInterface.OnMouseX;
+                @MouseX.canceled -= m_Wrapper.m_MouseActionsCallbackInterface.OnMouseX;
+                @MouseY.started -= m_Wrapper.m_MouseActionsCallbackInterface.OnMouseY;
+                @MouseY.performed -= m_Wrapper.m_MouseActionsCallbackInterface.OnMouseY;
+                @MouseY.canceled -= m_Wrapper.m_MouseActionsCallbackInterface.OnMouseY;
+                @Interaction.started -= m_Wrapper.m_MouseActionsCallbackInterface.OnInteraction;
+                @Interaction.performed -= m_Wrapper.m_MouseActionsCallbackInterface.OnInteraction;
+                @Interaction.canceled -= m_Wrapper.m_MouseActionsCallbackInterface.OnInteraction;
+            }
+            m_Wrapper.m_MouseActionsCallbackInterface = instance;
+            if (instance != null)
+            {
+                @Jump.started += instance.OnJump;
+                @Jump.performed += instance.OnJump;
+                @Jump.canceled += instance.OnJump;
+                @Move.started += instance.OnMove;
+                @Move.performed += instance.OnMove;
+                @Move.canceled += instance.OnMove;
+                @Sneak.started += instance.OnSneak;
+                @Sneak.performed += instance.OnSneak;
+                @Sneak.canceled += instance.OnSneak;
+                @Sprint.started += instance.OnSprint;
+                @Sprint.performed += instance.OnSprint;
+                @Sprint.canceled += instance.OnSprint;
+                @MouseX.started += instance.OnMouseX;
+                @MouseX.performed += instance.OnMouseX;
+                @MouseX.canceled += instance.OnMouseX;
+                @MouseY.started += instance.OnMouseY;
+                @MouseY.performed += instance.OnMouseY;
+                @MouseY.canceled += instance.OnMouseY;
+                @Interaction.started += instance.OnInteraction;
+                @Interaction.performed += instance.OnInteraction;
+                @Interaction.canceled += instance.OnInteraction;
+            }
+        }
+    }
+    public MouseActions @Mouse => new MouseActions(this);
+
+    // Menu
+    private readonly InputActionMap m_Menu;
+    private IMenuActions m_MenuActionsCallbackInterface;
+    private readonly InputAction m_Menu_ToggleMenu;
+    public struct MenuActions
+    {
+        private @PlayerInputActions m_Wrapper;
+        public MenuActions(@PlayerInputActions wrapper) { m_Wrapper = wrapper; }
+        public InputAction @ToggleMenu => m_Wrapper.m_Menu_ToggleMenu;
+        public InputActionMap Get() { return m_Wrapper.m_Menu; }
+        public void Enable() { Get().Enable(); }
+        public void Disable() { Get().Disable(); }
+        public bool enabled => Get().enabled;
+        public static implicit operator InputActionMap(MenuActions set) { return set.Get(); }
+        public void SetCallbacks(IMenuActions instance)
+        {
+            if (m_Wrapper.m_MenuActionsCallbackInterface != null)
+            {
+                @ToggleMenu.started -= m_Wrapper.m_MenuActionsCallbackInterface.OnToggleMenu;
+                @ToggleMenu.performed -= m_Wrapper.m_MenuActionsCallbackInterface.OnToggleMenu;
+                @ToggleMenu.canceled -= m_Wrapper.m_MenuActionsCallbackInterface.OnToggleMenu;
+            }
+            m_Wrapper.m_MenuActionsCallbackInterface = instance;
+            if (instance != null)
+            {
+                @ToggleMenu.started += instance.OnToggleMenu;
+                @ToggleMenu.performed += instance.OnToggleMenu;
+                @ToggleMenu.canceled += instance.OnToggleMenu;
+            }
+        }
+    }
+    public MenuActions @Menu => new MenuActions(this);
+
+    // TextBox
+    private readonly InputActionMap m_TextBox;
+    private ITextBoxActions m_TextBoxActionsCallbackInterface;
+    private readonly InputAction m_TextBox_Continue;
+    public struct TextBoxActions
+    {
+        private @PlayerInputActions m_Wrapper;
+        public TextBoxActions(@PlayerInputActions wrapper) { m_Wrapper = wrapper; }
+        public InputAction @Continue => m_Wrapper.m_TextBox_Continue;
+        public InputActionMap Get() { return m_Wrapper.m_TextBox; }
+        public void Enable() { Get().Enable(); }
+        public void Disable() { Get().Disable(); }
+        public bool enabled => Get().enabled;
+        public static implicit operator InputActionMap(TextBoxActions set) { return set.Get(); }
+        public void SetCallbacks(ITextBoxActions instance)
+        {
+            if (m_Wrapper.m_TextBoxActionsCallbackInterface != null)
+            {
+                @Continue.started -= m_Wrapper.m_TextBoxActionsCallbackInterface.OnContinue;
+                @Continue.performed -= m_Wrapper.m_TextBoxActionsCallbackInterface.OnContinue;
+                @Continue.canceled -= m_Wrapper.m_TextBoxActionsCallbackInterface.OnContinue;
+            }
+            m_Wrapper.m_TextBoxActionsCallbackInterface = instance;
+            if (instance != null)
+            {
+                @Continue.started += instance.OnContinue;
+                @Continue.performed += instance.OnContinue;
+                @Continue.canceled += instance.OnContinue;
+            }
+        }
+    }
+    public TextBoxActions @TextBox => new TextBoxActions(this);
+    public interface IMouseActions
+    {
+        void OnJump(InputAction.CallbackContext context);
+        void OnMove(InputAction.CallbackContext context);
+        void OnSneak(InputAction.CallbackContext context);
+        void OnSprint(InputAction.CallbackContext context);
+        void OnMouseX(InputAction.CallbackContext context);
+        void OnMouseY(InputAction.CallbackContext context);
+        void OnInteraction(InputAction.CallbackContext context);
+    }
+    public interface IMenuActions
+    {
+        void OnToggleMenu(InputAction.CallbackContext context);
+    }
+    public interface ITextBoxActions
+    {
+        void OnContinue(InputAction.CallbackContext context);
+    }
+}

@@ -1,0 +1,6 @@
+Walking: WASD
+Interacting: F
+Running: Shift + Walking
+Jumping: Space Bar
+Camera Control: Mouse
+Pause Menu: X

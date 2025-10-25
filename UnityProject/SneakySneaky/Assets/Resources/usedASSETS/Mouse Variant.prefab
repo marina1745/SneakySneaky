@@ -1,0 +1,180 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!143 &6986385553988754690
+CharacterController:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5715045913607697037}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Height: 0
+  m_Radius: 0.12
+  m_SlopeLimit: 45
+  m_StepOffset: 0.15
+  m_SkinWidth: 0.01
+  m_MinMoveDistance: 0.001
+  m_Center: {x: 0, y: 0.115, z: 0}
+--- !u!114 &1125253957086969294
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5715045913607697037}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 62899f850307741f2a39c98a8b639597, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Actions: {fileID: -944628639613478452, guid: 0b2320d5bfcf46c408a0302a7d2d70a2, type: 3}
+  m_NotificationBehavior: 2
+  m_UIInputModule: {fileID: 0}
+  m_DeviceLostEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  m_DeviceRegainedEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  m_ControlsChangedEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  m_ActionEvents:
+  - m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 5507536172411635390}
+        m_TargetAssemblyTypeName: PlayerControls, Assembly-CSharp
+        m_MethodName: Jump
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_ActionId: a3ef1235-be95-4323-9152-5614bc3e9954
+    m_ActionName: Mouse/Jump[/Keyboard/space]
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: e1460305-eb8f-48bf-8c5a-3be32bdbcd90
+    m_ActionName: Mouse/Move[/Keyboard/w,/Keyboard/s,/Keyboard/a,/Keyboard/d]
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: 38174383-2b7c-483a-be79-4a28490cd0b0
+    m_ActionName: Mouse/Sneak[/Keyboard/leftCtrl]
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: cc727eb3-77c6-4aff-bb86-82cc292a0ff5
+    m_ActionName: Mouse/Sprint[/Keyboard/leftShift]
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: 77f45e58-e6cc-425e-b321-73f817a2298f
+    m_ActionName: Mouse/MouseX[/Mouse/delta/x]
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: 4676fd13-992d-4cec-bd06-f87d50224a4b
+    m_ActionName: Mouse/MouseY[/Mouse/delta/y]
+  m_NeverAutoSwitchControlSchemes: 0
+  m_DefaultControlScheme: 
+  m_DefaultActionMap: Mouse
+  m_SplitScreenIndex: -1
+  m_Camera: {fileID: 0}
+--- !u!114 &5507536172411635390
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5715045913607697037}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0c33579831e4bc0459f94f1f051f8bba, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  baseSpeed: 1
+  sneakSpeedFactor: 0.5
+  sprintSpeedFactor: 1.5
+  movement: {x: 0, y: 0, z: 0}
+  jump: 0
+  sprint: 0
+  sneak: 0
+  isMoving: 0
+  isGrounded: 0
+  controller: {fileID: 0}
+  _camera: {fileID: 0}
+  mouseDelta: {x: 0, y: 0}
+--- !u!1001 &4867971370437267420
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: -9158135124904211863, guid: f9590c2d2a9a4b448be22e8cbb5d4c69, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.231
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: f9590c2d2a9a4b448be22e8cbb5d4c69, type: 3}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: f9590c2d2a9a4b448be22e8cbb5d4c69, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 5.438544
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: f9590c2d2a9a4b448be22e8cbb5d4c69, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 10.8212
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: f9590c2d2a9a4b448be22e8cbb5d4c69, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -38.939796
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: f9590c2d2a9a4b448be22e8cbb5d4c69, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: f9590c2d2a9a4b448be22e8cbb5d4c69, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: f9590c2d2a9a4b448be22e8cbb5d4c69, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: f9590c2d2a9a4b448be22e8cbb5d4c69, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: f9590c2d2a9a4b448be22e8cbb5d4c69, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: f9590c2d2a9a4b448be22e8cbb5d4c69, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: f9590c2d2a9a4b448be22e8cbb5d4c69, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: f9590c2d2a9a4b448be22e8cbb5d4c69, type: 3}
+      propertyPath: m_Name
+      value: Mouse Variant
+      objectReference: {fileID: 0}
+    - target: {fileID: 2313877837151514810, guid: f9590c2d2a9a4b448be22e8cbb5d4c69, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 6fa5e59313d1ba14db438f92c6b33794, type: 2}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: f9590c2d2a9a4b448be22e8cbb5d4c69, type: 3}
+--- !u!1 &5715045913607697037 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: f9590c2d2a9a4b448be22e8cbb5d4c69, type: 3}
+  m_PrefabInstance: {fileID: 4867971370437267420}
+  m_PrefabAsset: {fileID: 0}
